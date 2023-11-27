@@ -47,20 +47,26 @@ namespace case3
                 {
                     OyuncuRound++;
                     Console.WriteLine($"Tebrikler {oyuncu1} {OyuncuRound}. roundu kazandınız");
+                    Console.WriteLine("Oyun devam edilsin mi?");
                     
                 }
                 else if (zar2 > zar)
                 {
                     OyuncuRound++;
                     Console.WriteLine($"Tebrikler {oyuncu2} {OyuncuRound}. roundu kazandınız");
-                    
-                    
+                    Console.WriteLine("Oyun devam edilsin mi?");
+
                 }
                 else if (zar == zar2)
                 {
                     Console.WriteLine("Berabere Tekrar Zar atın");
                 }
 
+                if (Console.ReadLine() == "Hayır")
+                {
+                    
+                    break;
+                }
             }
         }
         
