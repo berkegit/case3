@@ -22,6 +22,8 @@ namespace case3
             string oyuncu2 = Console.ReadLine();
 
             int OyuncuRound = 0;
+            int Oyuncu1Skor = 0;
+            int Oyuncu2Skor = 0;
             
 
             while (true)
@@ -46,14 +48,18 @@ namespace case3
                 if (zar > zar2)
                 {
                     OyuncuRound++;
+                    Oyuncu1Skor++;
                     Console.WriteLine($"Tebrikler {oyuncu1} {OyuncuRound}. roundu kazandınız");
+                    Console.WriteLine($"Skor durumu {Oyuncu1Skor} - {Oyuncu2Skor}");
                     Console.WriteLine("Oyun devam edilsin mi?");
                     
                 }
                 else if (zar2 > zar)
                 {
                     OyuncuRound++;
+                    Oyuncu2Skor++;
                     Console.WriteLine($"Tebrikler {oyuncu2} {OyuncuRound}. roundu kazandınız");
+                    Console.WriteLine($"Skor durumu {Oyuncu1Skor} - {Oyuncu2Skor}");
                     Console.WriteLine("Oyun devam edilsin mi?");
 
                 }
